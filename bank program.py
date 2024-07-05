@@ -52,8 +52,7 @@ class Account:
 class Bank:
     def __init__(self, name, accounts):
         self.name = name
-        self.accounts = accounts  # Dictionary of accounts with account_no as keys
-
+        self.accounts = accounts  
     def get_account_names_and_details(self):
         for account_no, account in self.accounts.items():
             print(f"Account Number: {account_no}, Details: {account}")
@@ -72,16 +71,13 @@ account.check_balance()
 user1 = User("Alice", "alice@example.com", "123 Main St", "555-1234")
 user2 = User("Bob", "bob@example.com", "456 Elm St", "555-5678")
 
-# Create accounts for users
 account1 = Account(user1, "1001", "Bank A", 500)
 account2 = Account(user2, "1002", "Bank A", 1500)
 
-# Create a bank with the accounts
 accounts_dict = {
     account1.account_no: account1,
     account2.account_no: account2
 }
 bank = Bank("Bank A", accounts_dict)
 
-# Get account names and details
 bank.get_account_names_and_details()
