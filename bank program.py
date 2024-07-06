@@ -68,8 +68,8 @@ account.deposit()
 account.check_balance()
 """
 
-user1 = User("Alice", "alice@example.com", "123 Main St", "555-1234")
-user2 = User("Bob", "bob@example.com", "456 Elm St", "555-5678")
+user1 = User("Kosi", "kosi@example.com", "123 Main St", "555-1234")
+user2 = User("Arah", "arah@example.com", "456 Elm St", "555-5678")
 
 account1 = Account(user1, "1001", "Bank A", 500)
 account2 = Account(user2, "1002", "Bank A", 1500)
